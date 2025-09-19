@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign - --entitlements /Users/didiwu/repos/GoalTracker/GoalTracker/obj/Debug/net9.0-maccatalyst/maccatalyst-x64/Entitlements.xcent /Users/didiwu/repos/GoalTracker/GoalTracker/bin/Debug/net9.0-maccatalyst/maccatalyst-x64/GoalTracker.app
