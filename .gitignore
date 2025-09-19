@@ -1,0 +1,59 @@
+# Build results
+bin/
+obj/
+[Bb]uild/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+*.vscode/
+.vs/
+.idea/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# NuGet packages
+*.nupkg
+*.snupkg
+**/packages/*
+*.nuspec
+*.psmdcp
+*.dll
+*.exe
+
+# MAUI / Xamarin related
+*.apk
+*.apks
+*.aab
+*.ipa
+*.app
+*.dSYM/
+*.xcarchive
+*.xcuserdata/
+*.xcodeproj/*.xcworkspace
+*.xcodeproj/xcuserdata
+
+# JetBrains Rider
+*.iml
+*.ipr
+*.iws
+out/
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# Others
+*.swp
+*.lock.json
+project.lock.json
+
