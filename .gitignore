@@ -57,3 +57,16 @@ _ReSharper*/
 *.lock.json
 project.lock.json
 
+# Recursive bin/obj for all platforms
+**/bin/
+**/obj/
+
+# Xcode / MacCatalyst specific
+*.xcuserstate
+*.xcscmblueprint
+DerivedData/
+
+# Local settings
+*.csproj.user
+Properties/launchSettings.json
+
