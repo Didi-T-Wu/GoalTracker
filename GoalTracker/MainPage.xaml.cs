@@ -1,23 +1,32 @@
-﻿namespace GoalTracker;
+﻿
+using GoalTracker.Models;
+
+namespace GoalTracker;
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
 
-	public MainPage()
-	{
-		InitializeComponent();
+
+    public MainPage()
+    {
+        InitializeComponent();
+
+        var sampleGoals = new List<Goal>
+        {
+            new Goal { Name="Run a Marathon", Motivation="I want to be healthier." },
+            new Goal { Name="Read 12 Books", Motivation="Expand my knowledge." },
+            new Goal { Name="Save $5000", Motivation="Build financial security." }
+        };
+
+        GoalsCollection.ItemsSource = sampleGoals;
+
+         // Log when Add button is clicked
+        AddButton.Clicked += (s, e) =>
+        {
+            System.Diagnostics.Debug.WriteLine("Hello from MainPage!");
+            Console.WriteLine("Add button clicked!");
+        };
+
 	}
 
-	private void OnCounterClicked(object? sender, EventArgs e)
-	{
-		count++;
-
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
-
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
 }
